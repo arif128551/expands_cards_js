@@ -27,6 +27,7 @@ h3{
     border-radius: 12px;
     min-height: 620px;
     position: relative;
+    transition: flex 0.7s ease-in;
 }
 .panel h3{
     position: absolute;
@@ -37,9 +38,9 @@ h3{
 }
 .panel.active{
     flex: 5;
-    transition: flex 0.7s ease-in;
 }
 .panel.active h3{
     opacity: 1;
-    transition: opacity 0.2s ease-in 0.4;
+    transition: opacity 0.3s ease-in 0.4s;
+
 }
