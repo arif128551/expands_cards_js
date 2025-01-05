@@ -1,0 +1,45 @@
+body{
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+h3{
+    font-size: 22px;
+    color: #fff;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.panels{
+    display: flex;
+}
+.panel{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0.5;
+    margin: 10px;
+    border-radius: 12px;
+    min-height: 620px;
+    position: relative;
+}
+.panel h3{
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+    opacity: 0;
+    
+}
+.panel.active{
+    flex: 5;
+    transition: flex 0.7s ease-in;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.4;
+}
